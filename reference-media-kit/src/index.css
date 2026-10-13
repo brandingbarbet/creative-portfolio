@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #173664;
+  --color-brand-off-white: #F8F9FA;
+  --color-brand-light-gray: #E9ECEF;
+  --color-brand-slate: #274472;
+  --font-condensed: 'Anton', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Playfair Display', serif;
+}
+
+@layer utilities {
+  .font-condensed-impact {
+    font-family: 'Anton', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: 0.03em;
+  }
+  .font-script {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .circular-text {
+    position: absolute;
+    pointer-events: none;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.18;
+    user-select: none;
+  }
+}
+
+.slide-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9.6;
+  width: 100%;
+  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 10s linear infinite;
+}
+
+@media print {
+  body {
+    background: white !important;
+    padding: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .slide-card {
+    page-break-after: always;
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "site": {
+    "brand": "CREATIVE STUDIO",
+    "title": "Creative Portfolio",
+    "subtitle": "Digital Artist · Designer · Creative Thinker",
+    "description": "A curated collection of creative work, experiments, and collaborations.",
+    "email": "hello@example.com",
+    "location": "Available worldwide",
+    "background": "#1a345c",
+    "accent": "#f8fafc",
+    "portrait": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    "cta": "Let's work together",
+    "cta_url": "#contact",
+    "instagram": "#",
+    "tiktok": "#",
+    "youtube": "#",
+    "linkedin": "#",
+    "footer": "© 2026 Creative Portfolio. All rights reserved.",
+    "hero_headline": "Portfolio",
+    "hero_label_1": "social media",
+    "hero_label_2": "video editor",
+    "hero_label_3": "influencer",
+    "hero_label_4": "graphic designer"
+  },
+  "nav": [
+    {
+      "label": "ABOUT",
+      "href": "#about"
+    },
+    {
+      "label": "SERVICES",
+      "href": "#services"
+    },
+    {
+      "label": "WORK",
+      "href": "#work"
+    },
+    {
+      "label": "CONTACT",
+      "href": "#contact"
+    }
+  ],
+  "sections": [
+    {
+      "id": "about",
+      "title": "A little about me",
+      "eyebrow": "ABOUT",
+      "type": "text",
+      "visible": true,
+      "content": "I’m a creative professional who loves turning ideas into thoughtful visuals. I combine strategy, design, and storytelling to make work that feels distinctive."
+    },
+    {
+      "id": "services",
+      "title": "What I can do for you",
+      "eyebrow": "SERVICES",
+      "type": "cards",
+      "visible": true,
+      "content": "Creative direction,Visual identity,Digital design,Content creation"
+    },
+    {
+      "id": "work",
+      "title": "Selected work",
+      "eyebrow": "PORTFOLIO",
+      "type": "projects",
+      "visible": true,
+      "content": "A selection of recent projects and creative explorations."
+    },
+    {
+      "id": "contact",
+      "title": "Have a project in mind?",
+      "eyebrow": "LET'S CONNECT",
+      "type": "contact",
+      "visible": true,
+      "content": "Tell me what you're dreaming up. Let's make something memorable."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Brand Identity",
+      "category": "Branding",
+      "description": "A visual identity concept built around a bold, memorable mark.",
+      "image": "https://images.unsplash.com/photo-1634942536790-2534db7a3b6a?auto=format&fit=crop&w=900&q=80",
+      "url": "#"
+    },
+    {
+      "title": "Digital Campaign",
+      "category": "Digital Design",
+      "description": "A visual campaign designed to connect with an online audience.",
+      "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=900&q=80",
+      "url": "#"
+    },
+    {
+      "title": "Editorial Study",
+      "category": "Art Direction",
+      "description": "An editorial exploration of typography, color, and composition.",
+      "image": "https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=900&q=80",
+      "url": "#"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>Portfolio Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css"><script src="config.js"></script><script type="module" src="admin.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="admin-header"><div><a class="back" href="/">← View portfolio</a><h1>Portfolio Control Room</h1><p>Manage your website content, navigation, projects and images.</p></div><div id="header-actions"></div></header>
+    <div id="message" class="message hidden" role="status"></div>
+    <section id="login-panel" class="panel login-panel hidden"><h2>Admin sign in</h2><p>Use the admin email and password you created in Supabase Authentication.</p><form id="login-form"><label>Email<input type="email" name="email" autocomplete="username" required></label><label>Password<input type="password" name="password" autocomplete="current-password" required></label><button class="button" type="submit">Sign in</button></form><p class="hint">Public sign-ups should remain disabled in Supabase. Admin access is controlled by the portfolio admin allowlist.</p></section>
+    <section id="config-panel" class="panel hidden"><h2>Connect Supabase first</h2><p>Open <code>config.js</code> and add your Supabase project URL and anon/publishable key. Do not use the service-role key in frontend code.</p></section>
+    <section id="editor-panel" class="hidden">
+      <div class="statusbar"><span id="save-status">Changes are local until saved.</span><button class="button" id="save-button">Save all changes</button></div>
+      <section class="panel"><div class="section-head"><div><h2>Site settings</h2><p>Brand, hero, colors, contact details and social links.</p></div></div><div id="site-fields" class="field-grid"></div></section>
+      <section class="panel"><div class="section-head"><div><h2>Navigation</h2><p>Add, rename, remove or reorder the top navigation links.</p></div><button class="button secondary" id="add-nav">+ Add link</button></div><div id="nav-list" class="editor-list"></div></section>
+      <section class="panel"><div class="section-head"><div><h2>Page sections</h2><p>Control section order, visibility, text, type and images. New sections can be linked to the navigation.</p></div><button class="button secondary" id="add-section">+ Add section</button></div><div id="section-list" class="editor-list"></div></section>
+      <section class="panel"><div class="section-head"><div><h2>Portfolio projects</h2><p>Each project appears in sections whose type is “Projects”. Upload images directly to Supabase Storage.</p></div><button class="button secondary" id="add-project">+ Add project</button></div><div id="project-list" class="editor-list"></div></section>
+      <div class="bottom-save"><span>Remember to save after editing.</span><button class="button" id="save-button-bottom">Save all changes</button></div>
+    </section>
+    <footer class="admin-footer">Static frontend · Supabase Auth, Database and Storage · Never share your password or service-role key.</footer>
+  </main>
+</body>
+</html>
